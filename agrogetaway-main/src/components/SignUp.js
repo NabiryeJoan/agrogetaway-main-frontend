@@ -39,8 +39,8 @@ const defaultTheme = createTheme();
 export default function SignUp() {
   const adduser = async (member) =>{
     try{
-      const response =await axios.post("https://agrogetawy.onrender.com/user/", member)
-      // const response =await axios.post("{{URL}}/user", member)
+      // const response =await axios.post("https://agrogetawy.onrender.com/user/", member)
+      const response =await axios.post("{{URL}}/user", member)
       console.log(response)
       if(response.status===201){
         alert("Account created sucessfully")
